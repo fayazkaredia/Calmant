@@ -1,0 +1,50 @@
+{
+  materials: [
+    {
+      name: 'defaultMat',
+      parameters: [
+        {
+          baseColor: 'Boxing_Glove_L-1',
+        },
+        {
+          baseColorTint: [
+            0.64000000000000001,
+            0.64000000000000001,
+            0.64000000000000001,
+            1,
+          ],
+        },
+        {
+          metallic: 1,
+        },
+        {
+          roughness: 0.14280000000000001,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/obj_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+    ],
+    collision: {},
+    file: 'sampledata/boxing.OBJ',
+    name: 'boxing',
+    recenter: 'root',
+    scale: 0.30827799999999996,
+  },
+  samplers: [
+    {
+      file: 'sampledata\\Boxing_Glove_L-1.png',
+      name: 'Boxing_Glove_L-1',
+      pipeline_name: 'Boxing_Glove_L-1.png',
+    },
+  ],
+  version: '0.54:2',
+}

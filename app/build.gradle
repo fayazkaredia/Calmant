@@ -31,9 +31,34 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'com.google.android.material:material:1.3.0'
 
 }
 apply plugin: 'com.google.ar.sceneform.plugin'
 
 
+sceneform.asset('sampledata/boxing.OBJ',
+        'default',
+        'sampledata/boxing.sfa',
+        'src/main/res/raw/boxing')
 
+sceneform.asset('sampledata/p.fbx',
+        'default',
+        'sampledata/p.sfa',
+        'src/main/res/raw/p')
+
+sceneform.asset('sampledata/model.obj',
+        'default',
+        'sampledata/model.sfa',
+        'src/main/res/raw/model')
+
+sceneform.asset('sampledata/sandals.obj',
+        'default',
+        'sampledata/sandals.sfa',
+        'src/main/res/raw/sandals')
+
+
+sceneform.asset('sampledata/virus.fbx',
+        'default',
+        'sampledata/virus.sfa',
+        'src/main/res/raw/virus')

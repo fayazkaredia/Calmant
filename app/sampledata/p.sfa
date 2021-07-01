@@ -56,7 +56,7 @@
     file: 'sampledata/p.fbx',
     name: 'p',
     recenter: 'root',
-    scale: 0.09936899999999997,
+    scale: 0.19936899999999997,
   },
   samplers: [
     {
