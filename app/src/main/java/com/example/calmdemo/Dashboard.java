@@ -14,18 +14,6 @@ public class Dashboard extends AppCompatActivity {
     private ImageView img;
     private ImageView img1;
 
-    @Override
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_dashboard);
-//        button=(Button) findViewById(R.id.button);
-//        button.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                openArgame();
-//            }
-//        });
-//    }
 
 
     protected void onCreate(Bundle savedInstanceState) {

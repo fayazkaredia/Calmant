@@ -17,19 +17,18 @@
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:layout_alignParentEnd="true"
-        android:text="Zombies Left: 20"
+        android:text=""
         android:id="@+id/balloonsCntTxt"/>
 
     <TextView
+        android:id="@+id/timerText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
         android:layout_centerHorizontal="true"
-        android:text="0:0"
-        android:textSize="32sp"
-        android:textStyle="bold"
+        android:layout_marginTop="32dp"
         android:fontFamily="serif-monospace"
-        android:id="@+id/timerText"/>
+        android:textSize="32sp"
+        android:textStyle="bold" />
 
     <View
         android:layout_width="72dp"
@@ -44,23 +43,21 @@
         android:layout_centerInParent="true" />
 
     <Button
+        android:id="@+id/shootButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/shootButton"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="8dp"
-        android:text="Hit"/>
+        android:text="Punch" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/shootButton1"
-        android:layout_alignParentEnd="true"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="300dp"
         android:layout_marginBottom="8dp"
-        android:text="pan"/>
+        android:text="pan" />
 
     <Button
         android:id="@+id/button2"
@@ -76,6 +73,6 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="23dp"
         android:layout_marginBottom="8dp"
-        android:text="Sandle" />
+        android:text="Sandal" />
 
 </RelativeLayout>

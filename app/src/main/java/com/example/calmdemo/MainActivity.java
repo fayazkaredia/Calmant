@@ -44,7 +44,7 @@ TextView logo,slogan;
             @Override
             public void run() {
                 Intent i=new Intent(MainActivity.this,
-                        Dashboard.class);
+                        MainDashboard.class);
                 //Intent is used to switch from one activity to another.
 
                 startActivity(i);

@@ -3,4 +3,11 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimary1">#1D1C1C</color>
+
+    //yoga color
+
+    <color name="pink">#FFC0CB</color>
+    <color name="indigo">#3964C3</color>
+
 </resources>

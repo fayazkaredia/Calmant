@@ -126,7 +126,7 @@ public class ARCoreTime extends AppCompatActivity {
                     if (nodeInContact != null) {
 
                         balloonsLeft--;
-                        balloonsLeftTxt.setText("Balloons Left: " + balloonsLeft);
+                        balloonsLeftTxt.setText("Virus Left: " + balloonsLeft);
                         scene.removeChild(nodeInContact);
 
                         soundPool.play(sound, 1f, 1f, 1, 0

@@ -6,6 +6,8 @@
 
     <uses-permission android:name="android.permission.CAMERA" />
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -13,9 +15,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ARCoreTime"></activity>
+        <activity android:name=".ViewExerciseActivity"></activity>
+        <activity android:name=".DailyTrainingActivity" />
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".ListExercisesActivity" />
+        <activity android:name=".yogadashboard" />
+        <activity android:name=".Breath" />
+        <activity android:name=".ARCoreTime" />
         <activity android:name=".Dashboard" />
         <activity android:name=".ARCore" />
+        <activity android:name=".MainDashboard" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

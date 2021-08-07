@@ -361,28 +361,28 @@ public class ARCore extends AppCompatActivity {
 //
 //    }
 
-    private void buildBulletModel() {
-
-        Texture
-                .builder()
-                .setSource(this, R.drawable.pubgg)
-                .build()
-                .thenAccept(texture -> {
-
-
-                    MaterialFactory
-                            .makeOpaqueWithTexture(this, texture)
-                            .thenAccept(material -> {
-                                Vector3 vector3 = new Vector3(0.50f, 0.50f,0.50f);
-                                bulletRenderable = ShapeFactory.makeCube(vector3, Vector3.zero(), material);
-
-
-                            });
-
-
-                });
-
-    }
+//    private void buildBulletModel() {
+//
+//        Texture
+//                .builder()
+//                .setSource(this, R.drawable.pubgg)
+//                .build()
+//                .thenAccept(texture -> {
+//
+//
+//                    MaterialFactory
+//                            .makeOpaqueWithTexture(this, texture)
+//                            .thenAccept(material -> {
+//                                Vector3 vector3 = new Vector3(0.50f, 0.50f,0.50f);
+//                                bulletRenderable = ShapeFactory.makeCube(vector3, Vector3.zero(), material);
+//
+//
+//                            });
+//
+//
+//                });
+//
+//    }
 
     private void addBalloonsToScene() {
 

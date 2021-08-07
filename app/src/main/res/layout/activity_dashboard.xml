@@ -45,7 +45,7 @@
             android:layout_marginStart="32dp"
             android:layout_marginTop="8dp"
             android:fontFamily="casual"
-            android:text="your Subtitle..."
+            android:text="Stress Relief"
             android:textColor="#ffffff"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
