@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDCE2C">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/shape_btn"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/shape_btn2"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif"
+            android:text="Sign Up"
+            android:textColor="@color/grey"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/ETUsername"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/userbutton"
+            android:textColorHint="@color/grey"
+            android:textColor="@color/grey"
+            android:drawablePadding="15dp"
+            android:fontFamily="sans-serif-black"
+            android:hint="Username/E-Mail"
+            android:inputType="text"
+            android:paddingLeft="16dp" />
+
+        <EditText
+            android:id="@+id/ETPassword"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="12dp"
+            android:textColorHint="@color/grey"
+            android:textColor="@color/grey"
+            android:drawablePadding="15dp"
+            android:background="@drawable/userbutton"
+            android:fontFamily="sans-serif-black"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" />
+
+        <EditText
+            android:id="@+id/ETCpassword"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/userbutton"
+            android:textColorHint="@color/grey"
+            android:textColor="@color/grey"
+            android:drawablePadding="15dp"
+            android:fontFamily="sans-serif-black"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:paddingLeft="16dp" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/BTsignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/logonbtn"
+
+            android:fontFamily="sans-serif-black"
+            android:text="Create Account"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:onClick="registerScreen"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif"
+                android:text="Already have an account!"
+                android:textColor="#000000"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/TXTlogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="sans-serif"
+                android:text="LogIn"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
+

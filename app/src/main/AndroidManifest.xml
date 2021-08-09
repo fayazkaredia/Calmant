@@ -5,7 +5,6 @@
     <uses-feature android:name="android.hardware.camera.ar" />
 
     <uses-permission android:name="android.permission.CAMERA" />
-
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
@@ -15,7 +14,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ViewExerciseActivity"></activity>
+        <activity android:name=".ForgotPassword"></activity>
+        <activity android:name=".Signup" />
+        <activity android:name=".Login" />
+        <activity android:name=".ViewExerciseActivity" />
         <activity android:name=".DailyTrainingActivity" />
         <activity android:name=".SettingsActivity" />
         <activity android:name=".ListExercisesActivity" />

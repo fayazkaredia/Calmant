@@ -10,4 +10,8 @@
     <color name="pink">#FFC0CB</color>
     <color name="indigo">#3964C3</color>
 
+    // login color
+
+    <color name="grey">#363636</color>
+
 </resources>

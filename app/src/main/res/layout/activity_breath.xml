@@ -65,4 +65,34 @@
         android:layout_marginBottom="20dp"
         android:background="@drawable/round_corners"
         />
+
+    <Button
+        android:id="@+id/BtnBreathe1"
+        android:layout_width="110dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="120dp"
+        android:background="@drawable/round_corners"
+        android:onClick="play"
+        android:text="Play Music" />
+
+    <Button
+        android:id="@+id/BtnBreathe2"
+        android:layout_width="110dp"
+        android:layout_height="45dp"
+        android:onClick="stop"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/round_corners"
+        android:text="Stop Music" />
+
+    <Button
+        android:id="@+id/BtnBreathe3"
+        android:layout_width="110dp"
+        android:layout_height="45dp"
+        android:onClick="pause"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="220dp"
+        android:background="@drawable/round_corners"
+        android:text="Pause Music" />
 </RelativeLayout>

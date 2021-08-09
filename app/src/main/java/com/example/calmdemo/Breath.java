@@ -1,6 +1,8 @@
 package com.example.calmdemo;
 
-
+import android.media.MediaPlayer;
+import android.view.View;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -13,11 +15,12 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-
+import android.media.MediaPlayer;
 import java.util.Random;
 
 public class Breath extends AppCompatActivity {
 
+    MediaPlayer player;
     ImageView IVBreathe;
     String[] Breathe = {"breathe1","breathe2","breathe3","breathe4","breathe5","breathe6","breathe7"};
     Random random =  new Random();
@@ -93,6 +96,52 @@ public class Breath extends AppCompatActivity {
             }
         });
     }
+
+
+    public void play(View v) {
+        if (player == null) {
+            player = MediaPlayer.create(this, R.raw.deepmeditation);
+            player.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                @Override
+                public void onCompletion(MediaPlayer mp) {
+                    stopPlayer();
+                }
+            });
+        }
+
+        player.start();
+    }
+
+    public void pause(View v) {
+        if (player != null) {
+            player.pause();
+        }
+    }
+
+    public void stop(View v) {
+        stopPlayer();
+    }
+
+    private void stopPlayer() {
+        if (player != null) {
+            player.release();
+            player = null;
+            Toast.makeText(this, "MediaPlayer released", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        stopPlayer();
+    }
+
+
+
+
+
+
+
 
     public void Breathe1() {
 
