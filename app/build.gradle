@@ -41,6 +41,13 @@ dependencies {
     implementation 'com.github.prolificinteractive:material-calendarview:v1.4.3'
     implementation 'me.zhanghai.android.materialprogressbar:library:1.4.1'
 
+    //music
+    implementation 'com.gauravk.audiovisualizer:audiovisualizer:0.9.2'
+    implementation 'com.karumi:dexter:6.2.3'
+
+
+
+
 }
 apply plugin: 'com.google.ar.sceneform.plugin'
 

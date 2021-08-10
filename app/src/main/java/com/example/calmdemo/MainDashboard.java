@@ -15,6 +15,7 @@ public class MainDashboard extends AppCompatActivity {
     private ImageView img22;
     private ImageView img23;
     private ImageView img24;
+    private ImageView img25;
 
 
 
@@ -24,6 +25,7 @@ public class MainDashboard extends AppCompatActivity {
         img22=(ImageView) findViewById(R.id.imageView4a);
         img23=(ImageView) findViewById(R.id.imageView41);
         img24=(ImageView) findViewById(R.id.imageView42);
+        img25=(ImageView) findViewById(R.id.imageView43);
         img22.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -42,13 +44,23 @@ public class MainDashboard extends AppCompatActivity {
                 openyoga();
             }
         });
+        img25.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openMusic();
+            }
+        });
 
     }
 
 
 
 
-
+    public void openMusic()
+    {
+        Intent intent=new Intent(this,Music.class);
+        startActivity(intent);
+    }
 
 
     public void openArdashboard()
